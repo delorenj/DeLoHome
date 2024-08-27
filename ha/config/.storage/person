@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "jarad_delorenzo",
+        "name": "Jarad DeLorenzo",
+        "user_id": "0664b10fd104424bb3b55c8c9bcd3df3",
+        "device_trackers": []
+      }
+    ]
+  }
+}

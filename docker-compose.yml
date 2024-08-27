@@ -1,0 +1,18 @@
+services:
+  ha:
+    container_name: ha
+    build:
+      context: ./ha
+      dockerfile: Dockerfile
+    volumes:
+      - ./ha/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    restart: unless-stopped
+    # Remove the privileged mode for better security
+    # privileged: true
+    network_mode: bridge
+    ports:
+      - "8123:8123"
+    environment:
+      - TZ=America/New_York
+      - USER=homeassistant  # Set to the new dedicated user
