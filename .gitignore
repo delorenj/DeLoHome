@@ -1,0 +1,83 @@
+# Home Assistant files
+.HA_VERSION
+.storage
+.cloud
+.google.token
+
+# Log files
+*.log
+*.log.*
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Configuration files with sensitive information
+secrets.yaml
+known_devices.yaml
+
+# Custom components
+custom_components/
+
+# Temporary files
+*.py[cod]
+*.swp
+*~
+.DS_Store
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Backup files
+*.backup
+
+# Cache files
+.cache/
+
+# Ignore all hidden files and directories except .gitignore
+.*
+!.gitignore
+
+# Ignore configuration files that might contain sensitive information
+configuration.yaml
+automations.yaml
+scripts.yaml
+scenes.yaml
+
+# Ignore downloaded images
+www/
+
+# Ignore Z-Wave device files
+zwcfg_*
+zwscene_*
+options.xml
+
+# Ignore MQTT status files
+.mqtt_status
+
+# Ignore TTS cache
+tts/
+
+# Ignore recorder database
+home-assistant_v2.db*
+
+# Ignore custom panel files
+panels/
+
+# Ignore group files
+groups.yaml
+
+# Ignore zone files
+zones.yaml
+
+# Ignore device tracker files
+device_trackers.yaml
+
+# Ignore Zigbee files
+zigbee.db
